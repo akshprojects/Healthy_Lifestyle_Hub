@@ -1,6 +1,5 @@
 *{
    color: green;
-   font-size: 18px;
    font-family:'Times New Roman', Times, serif,Cambria, Cochin, Georgia;
 }
 .head{
@@ -15,9 +14,7 @@
 }
 body, html {
    margin: 0;
-   padding: 0;
-   overflow-x: hidden; 
-   color:green;  
+   padding: 0; 
 }
 
 .head h3{
@@ -110,13 +107,12 @@ body, html {
 .footer{
    background-color:rgb(173, 247, 174);
    color:green;
-   font-size: 20px;
-   margin-top: 1%;
+   font-size: 18px;
 }
 .footerabout{
    float:left;
    padding-top: 3%;
-   padding-left: 10%;
+   padding-left: 8%;
 }
 .footerlinks a{
 text-decoration: none;
@@ -140,7 +136,7 @@ color: blue;
       color:green;
    }
   .head h3{
-   font-size: 12px;
+   font-size: 10px;
    margin-left: -20px;
   }
  .nav a{
@@ -150,7 +146,7 @@ color: blue;
       font-size: 60%;
       flex:unset;
       gap:5%;
-      margin-left: -35px;
+      margin-left: -30px;
    }
    .contact{
       margin:0 10%;
@@ -177,4 +173,5 @@ color: blue;
      .footer{
    padding: 1.5%;
   }
+
 }
