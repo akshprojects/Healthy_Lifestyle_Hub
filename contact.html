@@ -1,119 +1,140 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Contact </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="contact.css">
-    </head>
-    <body>
-        <div class="head">
-            <h3> Healthy Lifestyle Hub</h3>
-            <h3>" Your one-stop destination for a healthier, happier life.
-            Discover tips, plans, and inspiration tailored just for you."</h3>
-        </div>
-        <nav class="nav">
-        
-         <a href="index.html" >Home</a>
-         <a href="about.html" >About</a>
-         <a href="recipes.html">Recipes</a>
-         <a href="workout.html">Workout</a>
-         <a href="mental-wellness1.html">Mental-wellness</a>
-         <a href="habits.html">Habits</a>
-         <a href="contact.html" class="active">Contact</a>
-        </nav>
+<head>
+    <title>Contact </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <div class="head">
+        <h3>Healthy Lifestyle Hub</h3>
+        <h3>"Your one-stop destination for a healthier, happier life.
+        Discover tips, plans, and inspiration tailored just for you."</h3>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="workout.html">Workout</a>
+        <a href="mental-wellness1.html">Mental-wellness</a>
+        <a href="habits.html">Habits</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
 
     <div class="contact">
-         <h2>Contact Us</h2>
-            <form id="contactForm">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <input type="tel" name="phone" placeholder="Your Phone">
-              <input type="text" name="subject" placeholder="Subject">
-              <textarea name="message" placeholder="Your Message" required></textarea>
-              <button type="submit">Send Message</button>
-            </form>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Display submitted messages here -->
+        <div id="submittedMessages" style="margin-top:20px;"></div>
     </div>
 
     <div class="feedback">
-       <h2>We Value Your Feedback</h2>
-       <p>Tell us what you think about our website or suggest improvements!</p>
-       <label for="rating">Rate Your Experience:</label>
-       <div class="stars">
-        <form id="form">
-         <input type="radio" name="rating" id="star1"><label for="star1">★</label>
-         <input type="radio" name="rating" id="star2"><label for="star2">★</label>
-         <input type="radio" name="rating" id="star3"><label for="star3">★</label>
-         <input type="radio" name="rating" id="star4"><label for="star4">★</label>
-         <input type="radio" name="rating" id="star5"><label for="star5">★</label>
-        </form>
-       </div>
-     
-    
+        <h2>We Value Your Feedback</h2>
+        <p>Tell us what you think about our website or suggest improvements!</p>
+        <label for="rating">Rate Your Experience:</label>
+        <div class="stars">
+            <form id="feedbackForm">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+            </form>
+        </div>
+        <div id="feedbackMessage" style="margin-top:10px;"></div>
     </div>
 
-   <script>
-   document.getElementById('contactForm').addEventListener('submit', function(e) {
-   e.preventDefault();
-   alert("Thank you! Your message has been sent.");
-   this.reset();
-  });
+    <footer>
+        <center>
+            <div class="footer">
+                <div class="footcontent">
+                    <div class="footerabout">
+                        <h2>Healthy Lifestyle Hub</h2>
+                        <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
+                        <p>We share trusted tips on nutrition, fitness, and mental well-being.</p>
+                        <p>So you can build healthy habits that last a lifetime.</p>
+                    </div>
 
-  // Select all radio buttons inside the .stars container
-const stars = document.querySelectorAll('.stars input[type="radio"]');
+                    <div class="footerlinks">
+                        <h3>Quick Links</h3>
+                        <a href="index.html">Home</a><br>
+                        <a href="about.html">About</a><br>
+                        <a href="recipes.html">Recipes</a><br>
+                        <a href="workout.html">Workouts</a><br>
+                        <a href="mental-wellness1.html">Mental-wellness</a><br>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
 
-stars.forEach(star => {
-  star.addEventListener('click', function() {
-    alert("Thank you! 🎉 for your Feedback.");
-  });
-});
+                <div class="footersocial">
+                    <h3>Follow Us</h3>
+                    <a style="margin-right: 10px;display: inline-block;" href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a style="margin-right: 10px;display: inline-block;" href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a style="margin-right: 10px;display: inline-block;" href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
 
-  </script>
+            <div class="footerpara">
+                <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
+            </div>
+        </center>
+    </footer>
 
+    <script>
+        // Handle contact form submission (no backend)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
 
-<footer>
-    <center>
-    <div class="footer">
-      <div class="footcontent">
-    <div class="footerabout">
-      <h2>Healthy Lifestyle Hub</h2>
-      <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
-      <p>We share  trusted tips on nutrition ,fitness,and mental well-being.</p>
-      <p>so,you can build healthy habits that last a lifetime.</p>
-    </div>
-      
-      <div class="footerlinks">
-      <h3>Quick Links</h3>
-      
-       <a href="index.html">Home</a><br>
-       <a href="about.html">About</a><br>
-       <a href="recipes.html">Recipes</a><br>
-       <a href="workout.html">Workouts</a><br>
-       <a href="mental-wellness1.html">Mental-wellness</a><br>
-       <a href="contact.html">Contact</a>
-        </div>
-       </div>
-        <div class="footersocial">
-      <h3>Follow Us</h3>
-      <a style="margin-right: 10px;display: inline-block;" href="#">
-         <img style="display:block;" src="facebook.png" alt="Facebook" >
-        </a>
-       <a style="margin-right: 10px;display: inline-block;" href="#" >
-          <img style="display:block;" src="twitter.png" alt="Twitter">
-        </a>
-         <a style="margin-right: 10px;display: inline-block;" href="#" > 
-          <img style="display:block;" src="instagram.png" alt="Instagram"> 
-        </a>
-        </div>
-        </div>
-       
-    <div class="footerpara">
-   <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
-    </div>  
-   </footer>
-  </center> 
+            const name = this.name.value.trim();
+            const email = this.email.value.trim();
+            const phone = this.phone.value.trim();
+            const subject = this.subject.value.trim();
+            const message = this.message.value.trim();
+
+            if (!name || !email || !message) {
+                alert("Please fill all required fields.");
+                return;
+            }
+
+            // Display submitted message on page
+            const submittedDiv = document.getElementById('submittedMessages');
+            const newMessage = document.createElement('div');
+            newMessage.style.border = "1px solid #ccc";
+            newMessage.style.padding = "10px";
+            newMessage.style.marginBottom = "10px";
+            newMessage.innerHTML = `
+                <strong>Name:</strong> ${name}<br>
+                <strong>Email:</strong> ${email}<br>
+                <strong>Phone:</strong> ${phone}<br>
+                <strong>Subject:</strong> ${subject}<br>
+                <strong>Message:</strong> ${message}
+            `;
+            submittedDiv.appendChild(newMessage);
+
+            alert("Your message has been received! 🎉");
+            this.reset();
+        });
+
+        // Handle feedback stars
+        const stars = document.querySelectorAll('.stars input[type="radio"]');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                feedbackMessage.textContent = `Thank you for rating us ${this.value} star${this.value > 1 ? 's' : ''}! 🎉`;
+            });
+        });
+    </script>
 </body>
 </html>
-
-    
 
