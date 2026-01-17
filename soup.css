@@ -163,7 +163,7 @@ color: blue;
     height: 200px;
     margin-top: -23px;
     object-fit: cover;
-    margin-left:-18px;
+    margin-left:-15px;
   }
   .card p{
    font-size: 15px;
@@ -178,4 +178,5 @@ color: blue;
   }
 
 }
+
 
