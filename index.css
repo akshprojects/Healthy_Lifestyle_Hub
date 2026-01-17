@@ -84,7 +84,7 @@ body, html {
 .start button:hover{
    background-color: rgb(251, 202, 112);
    cursor: pointer;
-   font-size: 23px;
+   font-size: 20px;
 }
 .blurred::before {
   content: "";
@@ -182,9 +182,7 @@ color: blue;
       font-size: 95%;
       padding: 4%;
    }
-   .startbtn{
-      font-size:90%;
-   }
+  
  /*  .footer{
       padding:2%;
       width:95%;
@@ -201,5 +199,6 @@ color: blue;
    }
  */
 }
+
 
 
