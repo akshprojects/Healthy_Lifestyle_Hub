@@ -1,0 +1,122 @@
+*{
+   font-family:'Times New Roman', Times, serif,Cambria, Cochin, Georgia;
+   color: green;
+}
+.head{
+   background: url("head_resized.png") no-repeat top center;
+   background-size: cover;
+   padding: 20px;
+   color: green;
+   text-align: center;
+   position: relative;
+   font-size: 23px;
+   width:100%;
+   max-width:100%;
+}
+body, html {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;   
+}
+.head h3{
+   top: -15px;
+   position: relative; 
+   font-size: 25px;
+}
+.nav{
+  padding: 20px;
+  display: flex;
+  justify-content:space-around;
+  width:100%;
+}
+
+.nav a{
+   font-size: 23px;
+   text-decoration: none;
+   color:green;
+}
+.nav a:hover{
+   color:orange;
+}
+.nav a:active{
+   color:red;
+}
+.nav a.active {
+  pointer-events: none; /* Disables clicking */
+  color:#b38b7d  ;     /* Change color so it looks inactive */
+  cursor: default;      /* Normal arrow cursor */
+}
+.about{
+  padding-top: 20px;
+  background-color:rgb(173, 247, 174);
+  color:rgb(1, 90, 1);
+  width:100%;
+  position:relative;
+  font-size: 24px;
+}
+.about p {
+   padding:0 2% 3% 2%;
+}
+.indent{
+  text-indent: 9em;
+}
+.point{
+   margin-left: 10%;
+}
+.about h2{
+   margin-left: 2%;
+}
+.about h3{
+   margin-left: 4%;
+}
+.join{
+   text-shadow: 2px 2px 5px goldenrod;
+   color:green;
+   font-size: 25px;
+   text-align:center ;
+}
+.footer{
+   background-color:rgb(173, 247, 174);
+   color:green;
+   font-size: 20px;
+}
+.footerabout{
+   float:left;
+   padding-top: 3%;
+   padding-left: 10%;
+}
+.footerlinks a{
+text-decoration: none;
+color:blue;
+}
+.footerlinks{
+   padding-top: 3%;
+}
+.footersocial{
+   clear:both;
+}
+.footerlinks a:hover{
+   font-size: 25px;
+}
+@media screen and (max-width: 600px){
+   *{
+      font-size: 15px;
+      padding: 1%;
+   }
+    .head h3{
+   font-size: 10px;
+   margin-left: -20px;
+  }
+   .nav a{
+      text-align: center;
+      flex:wrap;
+      justify-content: space-between;
+      font-size: 60%;
+      flex:unset;
+      gap:5%;
+      margin-left: -35px;
+   }
+   .join{
+      font-size: 17px;
+   }
+}

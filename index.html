@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home</title>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="head">
+            <h3> Healthy Lifestyle Hub</h3>
+            <h3>" Your one-stop destination for a healthier, happier life.
+            Discover tips, plans, and inspiration tailored just for you."</h3>
+        </div>
+        <nav class="nav">
+        
+         <a href="index.html" class="active" >Home</a>
+         <a href="about.html" >About</a>
+         <a href="recipes.html" >Recipes</a>
+         <a href="workout.html">Workout</a>
+         <a href="mental-wellness1.html">Mental-wellness</a>
+         <a href="habits.html">Habits</a>
+         <a href="contact.html">Contact</a>
+        </nav>
+  
+    <div class="welcome">
+    <h1 style="text-align: center;color: rgb(1, 100, 1);padding-top: 2%;">Welcome to Healthy Lifestyle Hub! ☘️ </h1>
+    <p>Your trusted companion for living a<strong> balanced </strong>and <strong>joyful life</strong>. 💚 We believe that health is built on simple choices made every day 🌞. Here, you’ll find<strong> nutritious recipes, 🏃‍♂️ fitness routines, wellness tips, and 💡 motivational guidance </strong>to support your journey.
+         Our collection includes 🍚 traditional Indian meals, 🥗modern healthy dishes, and 🧘 mindful practices that nourish both body and mind. Whether you’re a beginner or already on the path to wellness, we’re here to <strong>inspire, guide, and walk with you.🤝 </strong>
+        Start today, embrace living, and create a happier, more energetic version of yourself.
+    </p>
+    
+    <p>Stay inspired with <strong> 💫 wellness tips ,🥤 healthy drinks ,</strong>and<strong> motivational quotes.</strong>
+    Start your journey today toward a <strong>💪 healthier,happier,</strong>and more <strong> balanced life ✨.</strong></p>
+    
+  </div>
+    <div class="fact-box">
+        <h2>Did You Know?</h2>
+    </div>
+    <div id="factbox">
+        
+    </div>
+   <div class="start">
+    <a href="log.html">
+       <button type="button" id="startbtn"> Start Now</button>
+    </a>
+    <p id="message">Please click the "Start Now" button to continue.</p>
+    </div>
+
+    <footer>
+    <center>
+    <div class="footer">
+      <div class="footcontent">
+    <div class="footerabout">
+      <h2>Healthy Lifestyle Hub</h2>
+      <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
+      <p>We share  trusted tips on nutrition ,fitness,and mental well-being.</p>
+      <p>so,you can build healthy habits that last a lifetime.</p>
+    </div>
+      
+      <div class="footerlinks">
+      <h3>Quick Links</h3>
+      
+        <a href="#">Home</a><br>
+        <a href="#">Blog</a><br>
+        <a href="#">Recipes</a><br>
+        <a href="#">Workouts</a><br>
+        <a href="#">Contact</a>
+        </div>
+       </div>
+        <div class="footersocial">
+      <h3>Follow Us</h3>
+      <a style="margin-right: 10px;display: inline-block;" href="#">
+         <img style="display:block;" src="facebook.png" alt="Facebook" >
+        </a>
+       <a style="margin-right: 10px;display: inline-block;" href="#" >
+          <img style="display:block;" src="twitter.png" alt="Twitter">
+        </a>
+         <a style="margin-right: 10px;display: inline-block;" href="#" > 
+          <img style="display:block;" src="instagram.png" alt="Instagram"> 
+        </a>
+        </div>
+        </div>
+       
+    <div class="footerpara">
+   <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
+    </div>
+    
+     
+   </footer>
+  </center> 
+  
+    <script>
+        const facts=[
+      "🥗 Eating a fiber-rich breakfast keeps you full longer and improves digestion.",
+      "💧 Drinking 2–3 liters of water daily helps boost energy and metabolism.",
+      "🌞 Just 15 minutes of morning sunlight gives enough Vitamin D for the day.",
+      "🥜 A handful of nuts daily supports heart health and brain function.",
+      "🧘 Deep breathing for 5 minutes reduces stress instantly.",
+      "🥗 Eating leafy greens daily improves digestion and immunity.",
+      "💧 Drinking water before meals helps control appetite.",
+      "🌞Morning walks boost mood and increase Vitamin D.",
+      "🍎 Apples are natural cleansers for teeth and gums",
+      "🍋 Lemon water in the morning aids detox and hydration.",
+      "💤 Sleeping 7–8 hours daily helps in body repair.",
+      "🥭 Seasonal fruits provide the best nutrition for the body.",
+      "🥕Carrots improve eye health and skin glow."
+    ];
+
+    const randomIndex=Math.floor(Math.random()*facts.length);
+    document.getElementById("factbox").innerText=facts[randomIndex];
+
+    const startbtn=document.getElementById("startbtn");
+    const message=document.getElementById('message');
+    startbtn.addEventListener('click',(event)=>{event.stopPropagation();
+      window.location.href="log.html";
+    });
+
+ //anywhere
+
+document.body.addEventListener('click', (event) => {
+  const startBtn = event.target.closest('#startbtn');
+  const clickedLink = event.target.closest('a');
+
+  // If NOT clicking Start Now button
+  if (!startBtn) {
+    event.preventDefault(); // prevent link navigation
+    document.body.classList.add('blurred');
+
+    const message = document.getElementById('message');
+    message.style.display = 'block';
+
+    setTimeout(() => {
+      message.style.display = 'none';
+      document.body.classList.remove('blurred');
+    }, 2000);
+  }
+});
+    </script>
+  </body>
+        
+</html>

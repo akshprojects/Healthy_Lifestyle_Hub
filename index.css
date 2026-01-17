@@ -1,0 +1,201 @@
+
+*{
+   color:green;
+   font-family:'Times New Roman', Times, serif,Cambria, Cochin, Georgia;
+}
+body, html {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;   
+}
+.head{
+   background: url("head_resized.png") no-repeat top center;
+   background-size: cover;
+   background-position: center;
+   padding: 20px;
+   color: green;
+   text-align: center;
+   position: relative;
+   font-size: 23px;
+   width:100%;
+   max-width: 100%;
+}
+.head h3{
+   top: -15px;
+   position: relative; 
+   font-size: 25px;
+}
+.nav{
+  padding:20px;
+  display: flex;
+  justify-content:space-around;
+  width:100%;
+}
+
+.nav a{  
+   font-size: 23px;
+   text-decoration: none;
+   color:green;
+}
+.nav a:hover{
+   color:orange;
+}
+.nav a:active{
+   color:red;
+}
+.nav a.active {
+  pointer-events: none; 
+  color:#b38b7d  ;     
+  cursor: default;     
+}
+.welcome{
+    width:100%;
+    background-color: rgb(178, 245, 180) ;
+    padding: 1%;
+}
+.welcome p{
+    text-indent: 5em;
+    font-size: 25px;
+    color: green;
+    line-height: 1.8em;
+}
+.fact-box{
+    width:100%;
+    text-align: center;
+    color:green;
+}
+#factbox{
+   text-align: center;
+   color:green;
+   font-size: 20px;
+   padding-bottom: 2%;
+}
+.start{
+   width:100%;
+   text-align: center;
+   padding-bottom: 2%;
+}
+.start button{
+   font-size: 19px;
+   padding:1%;
+   width:160px;
+   border-radius: 10px;
+}
+.start button:hover{
+   background-color: rgb(251, 202, 112);
+   cursor: pointer;
+   font-size: 23px;
+}
+.blurred::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 9998;
+}
+
+#message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+.footer{
+   background-color:rgb(173, 247, 174);
+   color:green;
+   font-size: 20px;
+}
+.footerabout{
+   float:left;
+   padding-top: 3%;
+   padding-left: 10%;
+}
+.footerlinks a{
+text-decoration: none;
+color: blue;
+}
+.footerlinks{
+   padding-top: 3%;
+}
+.footersocial{
+   clear:both;
+}
+
+.footerlinks a:hover{
+   font-size: 25px;
+}
+@media screen and (max-width: 600px){
+  
+   *{
+      font-size: 15px;
+      padding:1%;
+   }
+    .head h3{
+   font-size: 10px;
+   margin-left: -20px;
+  }
+   .nav a{
+      text-align: center;
+      flex:wrap;
+      justify-content: space-between;
+      font-size: 60%;
+      flex:unset;
+      gap:5%;
+      margin-left: -35px;
+   }
+   
+  /*.head h3{
+   font-size: 8px;
+   width:95%;
+   padding-top: 1%;
+  }
+   .nav a{
+      text-align: center;
+      flex:wrap;
+      justify-content: space-between;
+      font-size: 60%;
+      flex:unset;
+      gap:5%;
+      margin-left: -35px;
+   }*/
+   #factbox{
+       font-size: 90%;
+   }
+   .start button{
+      font-size: 80%;
+      width:30%;
+      white-space: nowrap;
+   }
+   .welcome p{
+      font-size: 95%;
+      padding: 4%;
+   }
+ /*  .footer{
+      padding:2%;
+      width:95%;
+   }
+  .footerabout h2{
+      font-size: 90%;
+      
+   }
+   .footerabout p{
+      font-size: 90%;
+   }
+   .footerpara p{
+      font-size: 90%;
+   }
+ */
+}
+

@@ -1,0 +1,179 @@
+*{
+   color:green;
+   font-family:'Times New Roman', Times, serif,Cambria, Cochin, Georgia;
+}
+body, html {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;   
+}
+.nav a.active {
+  pointer-events: none; 
+  color:#b38b7d  ;     
+  cursor: default;      
+}
+.head{
+   background: url("head_resized.png") no-repeat top center;
+   background-size: cover;
+   padding: 20px;
+   color: green;
+   text-align: center;
+   position: relative;
+   font-size: 23px;
+   width:100%;
+}
+.head h3{
+   top: -15px;
+   position: relative; 
+   font-size: 90%;
+   font-family:'Comic Sans MS','Segoe Print ';
+}
+.nav{
+  padding:20px;
+  display: flex;
+  justify-content:space-around;
+  width:100%;
+}
+.nav a{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 23px;
+   text-decoration: none;
+   color:green;
+}
+.nav a:hover{
+   color:orange;
+}
+.nav a:active{
+   color:red;
+}
+.nav a.active {
+  pointer-events: none; 
+  color:#b38b7d  ;    
+  cursor: default;     
+}
+.explore h3{
+    background-color: rgb(187, 241, 187);
+     padding:2%;
+     text-align: center;
+     font-size: 25px;
+}
+.bexplore {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;   
+    font-size: 22px;   
+    background-color: whitesmoke;
+}
+.bexplore a {
+    position: absolute;
+    right: 0;                
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 2%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 30px;    
+  justify-content: center; 
+  padding: 20px;
+}
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width:350px;
+  height:520px;
+  background-color: rgb(187, 243, 187);
+   overflow: hidden;
+   box-shadow: 0 8px 20px grey;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  width:300px;
+  height:300px;
+  padding:25px;
+}
+
+.card p{
+   font-size: 20px;
+   text-align: center;
+   padding: 0 3% 0 3%; 
+}
+ .card :hover{
+   transform: scale(1.10);
+  }
+
+.footer{
+   background-color:rgb(173, 247, 174);
+   color:green;
+   font-size: 18px;
+}
+.footerabout{
+   float:left;
+   padding-top: 3%;
+   padding-left: 8%;
+}
+.footerlinks a{
+text-decoration: none;
+color: blue;
+}
+.footerlinks{
+   padding-top: 3%;
+}
+.footersocial{
+   clear:both;
+}
+.footerlinks a:hover{
+   font-size: 23px;
+}
+@media screen and (max-width: 600px){
+   *{
+      font-size: 15px;
+   }
+  .head{
+   font-size: 75%;
+   margin-left: -20px;
+  }
+   .nav a{
+      text-align: center;
+      flex:wrap;
+      justify-content: space-between;
+      font-size: 60%;
+      flex:unset;
+      gap:5%;
+      margin-left: -30px;
+   }
+   .card {
+    width: 90%;
+    height:350px;
+    max-width: 350px;
+     overflow: hidden;
+   box-shadow: 0 8px 20px grey;
+  }
+   .card :hover{
+   transform: scale(1.05);
+  }
+  .card img {
+    height: 200px;
+    margin-top: -23px;
+    object-fit: cover;
+    margin-left:-23px;
+  }
+  .card p{
+   font-size: 15px;
+  }
+   .explore h3
+   {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .bexplore p{
+   font-size: 10px;
+  }
+}

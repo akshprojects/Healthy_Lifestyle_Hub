@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Contact </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="contact.css">
+    </head>
+    <body>
+        <div class="head">
+            <h3> Healthy Lifestyle Hub</h3>
+            <h3>" Your one-stop destination for a healthier, happier life.
+            Discover tips, plans, and inspiration tailored just for you."</h3>
+        </div>
+        <nav class="nav">
+        
+         <a href="index.html" >Home</a>
+         <a href="about.html" >About</a>
+         <a href="recipes.html">Recipes</a>
+         <a href="workout.html">Workout</a>
+         <a href="mental-wellness1.html">Mental-wellness</a>
+         <a href="habits.html">Habits</a>
+         <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+    <div class="contact">
+         <h2>Contact Us</h2>
+            <form id="contactForm">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="tel" name="phone" placeholder="Your Phone">
+              <input type="text" name="subject" placeholder="Subject">
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+    </div>
+
+    <div class="feedback">
+       <h2>We Value Your Feedback</h2>
+       <p>Tell us what you think about our website or suggest improvements!</p>
+       <label for="rating">Rate Your Experience:</label>
+       <div class="stars">
+        <form id="form">
+         <input type="radio" name="rating" id="star1"><label for="star1">★</label>
+         <input type="radio" name="rating" id="star2"><label for="star2">★</label>
+         <input type="radio" name="rating" id="star3"><label for="star3">★</label>
+         <input type="radio" name="rating" id="star4"><label for="star4">★</label>
+         <input type="radio" name="rating" id="star5"><label for="star5">★</label>
+        </form>
+       </div>
+     
+    
+    </div>
+
+   <script>
+   document.getElementById('contactForm').addEventListener('submit', function(e) {
+   e.preventDefault();
+   alert("Thank you! Your message has been sent.");
+   this.reset();
+  });
+
+  // Select all radio buttons inside the .stars container
+const stars = document.querySelectorAll('.stars input[type="radio"]');
+
+stars.forEach(star => {
+  star.addEventListener('click', function() {
+    alert("Thank you! 🎉 for your Feedback.");
+  });
+});
+
+  </script>
+
+
+<footer>
+    <center>
+    <div class="footer">
+      <div class="footcontent">
+    <div class="footerabout">
+      <h2>Healthy Lifestyle Hub</h2>
+      <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
+      <p>We share  trusted tips on nutrition ,fitness,and mental well-being.</p>
+      <p>so,you can build healthy habits that last a lifetime.</p>
+    </div>
+      
+      <div class="footerlinks">
+      <h3>Quick Links</h3>
+      
+        <a href="#">Home</a><br>
+        <a href="#">Blog</a><br>
+        <a href="#">Recipes</a><br>
+        <a href="#">Workouts</a><br>
+        <a href="#">Contact</a>
+        </div>
+       </div>
+        <div class="footersocial">
+      <h3>Follow Us</h3>
+      <a style="margin-right: 10px;display: inline-block;" href="#">
+         <img style="display:block;" src="facebook.png" alt="Facebook" >
+        </a>
+       <a style="margin-right: 10px;display: inline-block;" href="#" >
+          <img style="display:block;" src="twitter.png" alt="Twitter">
+        </a>
+         <a style="margin-right: 10px;display: inline-block;" href="#" > 
+          <img style="display:block;" src="instagram.png" alt="Instagram"> 
+        </a>
+        </div>
+        </div>
+       
+    <div class="footerpara">
+   <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
+    </div>  
+   </footer>
+  </center> 
+</body>
+</html>
+    

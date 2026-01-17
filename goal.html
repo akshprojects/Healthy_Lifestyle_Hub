@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Goal </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="goal.css">
+    </head>
+    <body>
+
+        <div class="head">
+            <h3> Healthy Lifestyle Hub</h3>
+            <h3>" Your one-stop destination for a healthier, happier life.
+            Discover tips, plans, and inspiration tailored just for you."</h3>
+        </div>
+
+        <div class="back">
+         <a href="habits.html">    <p style="color: #f05a28;margin-top: 35px;white-space: nowrap;">Back to the page.</p></a>
+        </div>
+
+        <div class="desc">
+        <h2>Build consistent habits to help you reach your goal faster.</h2>
+        </div>
+
+        <div class="image">
+            <img src="flower.jpg" alt="flower">
+        </div>
+
+        <div class="crud">
+            
+            <ol id="goalList">
+                <li><input type="text" id="add" placeholder="Enter your goal">
+                  <button onclick="done(this.previousElementSibling)">Done</button>
+                  <button onclick="add()">Add</button>
+                  <button>Remove</button>
+                  
+            </li>
+            </ol>
+        </div>
+
+        
+        <div class="done">
+          <h2 style="text-align: center; padding-top: 2%;">Completed</h2>
+          <ul id="doneList"></ul>
+        </div>
+
+   <script>
+    function add(){
+      const list = document.getElementById("goalList");
+
+      const li = document.createElement("li");
+
+      const input = document.createElement("input");
+      input.type = "text";
+      input.placeholder = "Enter your goal";
+      li.appendChild(input);
+
+       const donebutton=document.createElement("button");
+      donebutton.textContent="Done";
+      donebutton.onclick=function (){done(input);};
+      li.appendChild(donebutton);
+      list.appendChild(li);
+
+      const addbutton=document.createElement("button");
+      addbutton.textContent="Add";
+      addbutton.onclick=function(){add();};
+      li.appendChild(addbutton);
+    
+      const removebutton=document.createElement("button");
+      removebutton.textContent="Remove";
+      removebutton.onclick=function(){li.remove()};
+      li.appendChild(removebutton);
+
+     
+    };
+    function done(input){
+   const doneList = document.getElementById("doneList");
+   const li = document.createElement("li");
+   li.textContent=input.value;
+    doneList.appendChild(li);
+    };
+   </script> 
+      
+
+
+    <footer>
+    <center>
+    <div class="footer">
+      <div class="footcontent">
+    <div class="footerabout">
+      <h2>Healthy Lifestyle Hub</h2>
+      <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
+      <p>We share  trusted tips on nutrition ,fitness,and mental well-being.</p>
+      <p>so,you can build healthy habits that last a lifetime.</p>
+    </div>
+      
+      <div class="footerlinks">
+      <h3>Quick Links</h3>
+      
+        <a href="#">Home</a><br>
+        <a href="#">Blog</a><br>
+        <a href="#">Recipes</a><br>
+        <a href="#">Workouts</a><br>
+        <a href="#">Contact</a>
+        </div>
+       </div>
+        <div class="footersocial">
+      <h3>Follow Us</h3>
+      <a style="margin-right: 10px;display: inline-block;" href="#">
+         <img style="display:block;" src="facebook.png" alt="Facebook" >
+        </a>
+       <a style="margin-right: 10px;display: inline-block;" href="#" >
+          <img style="display:block;" src="twitter.png" alt="Twitter">
+        </a>
+         <a style="margin-right: 10px;display: inline-block;" href="#" > 
+          <img style="display:block;" src="instagram.png" alt="Instagram"> 
+        </a>
+        </div>
+        </div>
+       
+    <div class="footerpara">
+   <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
+    </div>  
+   </footer>
+  </center> 
+
+
+    </body>
+    </html>

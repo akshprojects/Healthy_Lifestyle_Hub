@@ -1,0 +1,180 @@
+*{
+   color: green;
+   font-size: 18px;
+   font-family:'Times New Roman', Times, serif,Cambria, Cochin, Georgia;
+}
+.head{
+   background: url("head_resized.png") no-repeat top center;
+   background-size: cover;
+   padding: 20px;
+   color: green;
+   text-align: center;
+   position: relative;
+   font-size: 23px;
+   width:100%;
+}
+body, html {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden; 
+   color:green;  
+}
+
+.head h3{
+   top: -15px;
+   position: relative; 
+   font-size: 25px;
+}
+.nav{
+  padding:20px;
+  display: flex;
+  justify-content:space-around;
+  width:100%;
+}
+
+.nav a{
+   font-size: 23px;
+   text-decoration: none;
+   color:green;
+}
+.nav a:hover{
+   color:orange;
+}
+.nav a:active{
+   color:red;
+}
+.nav a.active {
+  pointer-events: none; /* Disables clicking */
+  color:#b38b7d  ;     /* Change color so it looks inactive */
+  cursor: default;      /* Normal arrow cursor */
+}
+.contact input,button{
+    text-align: center;
+    font-size: 18px;
+    font-size: 22px;
+    padding:8px;
+    border-radius: 5px;
+    margin:0% 22%;  
+}
+.contact #contactForm input,button{
+    margin-bottom: 4%;
+}
+.contact{
+    padding: 1%;
+    width:50%;
+    box-shadow: 0 4px 10px rgba(0,0,0.1,0.1);
+    margin:0% 25%;
+    background-color: rgb(197, 237, 197);
+    border-radius: 5px;
+}
+.contact textarea{
+    font-size: 20px;
+    padding: 1%;
+    width:55%;
+    border-radius: 5px;
+    margin:0% 22% 3% 22%;
+}
+.contact input{
+    width:55%;
+}
+.contact h2{
+   text-align: center;
+}
+.contact button:hover{
+   background-color: rgb(255, 123, 0);
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse; /* left to right */
+}
+.feedback{
+   text-align: center;
+   font-size: 20px;
+   padding:1%;
+}
+.stars label{
+   font-size: 50px;
+   color:lightgray;
+    cursor:pointer;
+}
+.stars label:hover{
+   color:gold;
+}
+.stars input{
+   display: none;
+}
+.stars input:checked ~ label {
+  color: gold; 
+}
+.footer{
+   background-color:rgb(173, 247, 174);
+   color:green;
+   font-size: 20px;
+   margin-top: 1%;
+}
+.footerabout{
+   float:left;
+   padding-top: 3%;
+   padding-left: 10%;
+}
+.footerlinks a{
+text-decoration: none;
+color: blue;
+}
+.footerlinks{
+   padding-top: 3%;
+}
+.footersocial{
+   clear:both;
+}
+.footerlinks a:hover{
+   font-size: 23px;
+}
+
+@media screen and (max-width: 600px){
+   *{
+      font-size: 15px;
+      padding: 0 1%;
+      width: 100%;
+      color:green;
+   }
+  .head h3{
+   font-size: 12px;
+   margin-left: -20px;
+  }
+ .nav a{
+      text-align: center;
+      flex:wrap;
+      justify-content: space-between;
+      font-size: 60%;
+      flex:unset;
+      gap:5%;
+      margin-left: -35px;
+   }
+   .contact{
+      margin:0 10%;
+      width:250px;      
+   }
+   .contact input,button,textarea{
+      font-size: 16px;
+      width: 160px;
+      margin:0 15%;
+   }
+   .contact textarea{
+      height:70px;
+   }
+   #contactForm button{
+      margin-bottom: 15px;
+   }
+   .feedback{
+      width:100%;
+      padding: 0 2%;
+   }
+   .stars label{
+      font-size: 35px;
+   }
+     .footer{
+   padding: 1.5%;
+  }
+}

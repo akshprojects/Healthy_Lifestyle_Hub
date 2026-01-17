@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mental Wellness</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mental-wellness1.css">
+    </head>
+     <body>
+        <div class="head">
+            <h3> Healthy Lifestyle Hub</h3>
+            <h3>" Your one-stop destination for a healthier, happier life.
+            Discover tips, plans, and inspiration tailored just for you."</h3>
+        </div>
+
+        <nav class="nav">
+         <a href="index.html" >Home</a>
+         <a href="about.html">About</a>
+         <a href="recipes.html">Recipes</a>
+         <a href="workout.html">Workout</a>
+         <a href="#"  class="active">Mental-wellness</a>
+         <a href="habits.html">Habits</a>
+         <a href="contact.html">Contact</a>
+        </nav>
+        
+        <p class="tit"> "Take a moment for yourself. Reflect on your day, your feelings, or something you are grateful for."</p>
+         <section class="mood">
+            <h2>Mood Tracker</h2>
+            <h3>Pick an emoji to describe your mood today and read a story .</h3>
+            <button onclick="happy()">😊 Happy</button>
+            <button onclick="calm()"> 🙂‍↕️ Calm</button>
+            <button onclick="Stressed()"> 😣 Stressed</button>
+            <button onclick="Anxious()"> 😰 Anxious</button>
+        </section>
+
+        <div class="mstory">
+               <h3 >Your Story here.....</h3>
+            <p id="story"></p>
+        </div>
+      <a class="d_entry"   href="mental-wellness2.html">Click here 👉 Write what made you smile today😄✨</a>
+
+       <script>
+        function happy(){
+         
+             let hstory=document.getElementById("story");
+            
+             hstory.textContent=" 🌞 Emma woke up to golden sunlight streaming through her window. 👩‍🤝‍👩 She met her friends in the park, where laughter 😂 filled the air. 🐦 Birds chirped cheerfully as they played by the fountain ⛲. 💐 Later, Lucas handed her a small bouquet of flowers, making her smile 😊.🌅 As the sun set, they sat by the river, enjoying the warmth and the simple joys of a perfect day together ❤️.";
+    }
+         function calm(){
+             let hstory=document.getElementById("story");
+            hstory.textContent="🧘‍♀️ Maya sat on a soft blanket by the lakeside 🌊, feeling the gentle breeze 🍃 brush her face. ✨ The water shimmered under the afternoon sun ☀️, and the quiet rustle of leaves 🍂 created a soothing melody 🎶. She closed her eyes 😌, taking deep breaths 🫁, letting the peaceful moments wash over her. ⏳ Time seemed to slow down, and for a while, nothing else mattered but the serenity surrounding her 🌸.";
+        }
+
+             function Stressed(){
+                  let hstory=document.getElementById("story");
+                  hstory.textContent="📞 Sam had a very busy day — work 💻, calls 📱, and messages 💬 made him feel tired 😫 and worried. He could feel his shoulders tense 😣 and his head spinning 🤯. Deciding to take a short walk 🚶 outside, he noticed the sun shining ☀️ and birds singing 🐦. The fresh air 🍃 and gentle breeze 🌬️ slowly made him feel calm 😌. By the time he returned home 🏡, Sam smiled 😀 and realized that even a few minutes of peace can make a day happy 🌈.";
+   
+             }
+             function Anxious(){
+                 let hstory=document.getElementById("story");
+                   hstory.textContent="💭 Lily felt nervous 😟 and worried about the day ahead. Her heart ❤️‍🔥 was racing 🏃, and she could not stop thinking 🤯 about all the problems waiting for her. She took a deep breath 🌬️ and stepped outside 🚶‍♀️ for a short walk. The sunlight ☀️ felt warm on her face 🙂, and the birds 🐦 were singing 🎶. Slowly, her worries melted away 🌸. By the time she returned, Lily smiled 😊, feeling calm 😌 and happy again 🌈.";
+    }
+            </script>
+  <footer>
+    <center>
+    <div class="footer">
+      <div class="footcontent">
+    <div class="footerabout">
+      <h2>Healthy Lifestyle Hub</h2>
+      <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
+      <p>We share  trusted tips on nutrition ,fitness,and mental well-being.</p>
+      <p>so,you can build healthy habits that last a lifetime.</p>
+    </div>
+      
+      <div class="footerlinks">
+      <h3>Quick Links</h3>
+      
+        <a href="#">Home</a><br>
+        <a href="#">Blog</a><br>
+        <a href="#">Recipes</a><br>
+        <a href="#">Workouts</a><br>
+        <a href="#">Contact</a>
+        </div>
+       </div>
+        <div class="footersocial">
+      <h3>Follow Us</h3>
+      <a style="margin-right: 10px;display: inline-block;" href="#">
+         <img style="display:block;" src="facebook.png" alt="Facebook" >
+        </a>
+       <a style="margin-right: 10px;display: inline-block;" href="#" >
+          <img style="display:block;" src="twitter.png" alt="Twitter">
+        </a>
+         <a style="margin-right: 10px;display: inline-block;" href="#" > 
+          <img style="display:block;" src="instagram.png" alt="Instagram"> 
+        </a>
+        </div>
+        </div>
+       
+    <div class="footerpara">
+   <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
+    </div>
+  
+     
+   </footer>
+  </center> 
+  </body>
+    
+</html>

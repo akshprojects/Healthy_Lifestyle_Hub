@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <title>Register</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+   
+        </head>
+        <body>
+            <div class="head">
+            <h3> Healthy Lifestyle Hub</h3>
+            <h3>" Your one-stop destination for a healthier, happier life.
+            Discover tips, plans, and inspiration tailored just for you."</h3>
+        </div>
+
+        <a href="index.html"><p style="color: #f05a28;margin-right:2%;text-align: end;">Back to the page.</p></a>
+         <center>
+            
+            <div class="log_container">
+            <h2>Login</h2>
+            <form action="#" method="post" onsubmit="return validateregisterform()">
+                <input type="hidden" name="form_type" value="login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"required><br><br>
+
+                <label for="cpassword">Confirm password:</label>
+                <input type="password" id="cpassword" name="cpassword" required><br><br>
+
+                <input type="submit" value="Register"  class="submit">
+  
+            </form>
+            
+            </center>
+        </div>
+        <p style="background-color: white;color:white;">...</p>
+        <footer>
+    <center>
+    <div class="footer">
+      <div class="footcontent">
+    <div class="footerabout">
+      <h2>Healthy Lifestyle Hub</h2>
+      <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
+      <p>We share  trusted tips on nutrition ,fitness,and mental well-being.</p>
+      <p>so,you can build healthy habits that last a lifetime.</p>
+    </div>
+      
+      <div class="footerlinks">
+      <h3>Quick Links</h3>
+      
+        <a href="#">Home</a><br>
+        <a href="#">Blog</a><br>
+        <a href="#">Recipes</a><br>
+        <a href="#">Workouts</a><br>
+        <a href="#">Contact</a>
+        </div>
+       </div>
+        <div class="footersocial">
+      <h3>Follow Us</h3>
+      <a style="margin-right: 10px;display: inline-block;" href="#">
+         <img style="display:block;" src="facebook.png" alt="Facebook" >
+        </a>
+       <a style="margin-right: 10px;display: inline-block;" href="#" >
+          <img style="display:block;" src="twitter.png" alt="Twitter">
+        </a>
+         <a style="margin-right: 10px;display: inline-block;" href="#" > 
+          <img style="display:block;" src="instagram.png" alt="Instagram"> 
+        </a>
+        </div>
+        </div>
+       
+    <div class="footerpara">
+   <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
+    </div>
+    
+     
+   </footer>
+  </center> 
+   <script>
+        function validateregisterform(){
+            let username=document.getElementById("username").value.trim();
+            let email=document.getElementById("email").value.trim();
+            let password=document.getElementById("password").value;
+            let cpassword=document.getElementById("cpassword").value;
+             if(username===""){
+                alert("please enter username");
+                return false;
+            }
+            if(password===""){
+                alert("please enter your password");
+                return false;
+            }
+            let emailpattern=/^[^]+@[^]+\.[a-z]{2,3}$/;
+            if(!email.match(emailpattern)){
+                alert("please enter valid email address");
+                return false;
+            }
+            if(password.length<6){
+                alert("password must be atleast 6 characters");
+                return false;
+            }
+            if (password!==cpassword){
+                alert("passwords do not match");
+                return false;
+            }
+            alert("Successfully Registered!");
+    
+    // Redirect to About page
+    window.location.href = "about.html";
+    
+    return false;
+        }
+     </script>
+  </body>
+
+
+</html>

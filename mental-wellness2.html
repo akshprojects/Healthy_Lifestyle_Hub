@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mental Wellness</title>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mental-wellness2.css">
+    </head>
+   <body>
+        <div class="head">
+            <h3> Healthy Lifestyle Hub</h3>
+            <h3>" Your one-stop destination for a healthier, happier life.
+            Discover tips, plans, and inspiration tailored just for you."</h3>
+        </div>
+        <nav class="nav">
+        
+         <a href="#" class="active" >Home</a>
+         <a href="about.html" >About</a>
+         <a href="recipes.html" >Recipes</a>
+         <a href="workout.html">Workout</a>
+         <a href="mental-wellness1.html">Mental-wellness</a>
+         <a href="habits.html">Habits</a>
+         <a href="#">Contact</a>
+        </nav>
+  <center>
+     <div  class="daily_journal">
+            <h2 >Daily Journal</h2>
+            <h3>Write your thoughts,feelings,or things you are grateful for today:</h3>
+            <label for="date" >Date:</label>
+            <input type="date" id="date">
+            <h3>Your Thoughts / Gratitude:</h3>
+            <textarea id="content"   rows="8" cols="45">  Iam grateful for...</textarea>
+        </div>
+          <button id="save_entry" class="Save_entry" onclick="show()">Save Entry</button>
+           
+          <div class="prev_entry">
+            <h2>My Journal</h2>  
+            <ul id="entries">
+
+            </ul>      
+            </div>    
+            
+            </center>
+        
+          <script>
+            function show(){
+            let entry=document.getElementById("content").value;
+            let chosendate=document.getElementById("date").value;
+            let newentry=document.createElement("li");
+            
+            if(entry.trim()!==""){
+                newentry.textContent=entry+" ( " + chosendate+" ) ";
+            }
+            else{
+                let today=new Date().toLocaleDateString();
+                newentry.textContent=entry+" ( "+today+" ) ";
+            }
+            document.getElementById("entries").appendChild(newentry);
+            document.getElementById("content").value="";
+            document.getElementById("date").value="";
+        }
+</script>
+ <footer>
+    <center>
+    <div class="footer">
+      <div class="footcontent">
+    <div class="footerabout">
+      <h2>Healthy Lifestyle Hub</h2>
+      <p>My Healthy Lifestyle Hub is dedicated to helping you live a balanced life.</p>
+      <p>We share  trusted tips on nutrition ,fitness,and mental well-being.</p>
+      <p>so,you can build healthy habits that last a lifetime.</p>
+    </div>
+      
+      <div class="footerlinks">
+      <h3>Quick Links</h3>
+      
+        <a href="#">Home</a><br>
+        <a href="#">Blog</a><br>
+        <a href="#">Recipes</a><br>
+        <a href="#">Workouts</a><br>
+        <a href="#">Contact</a>
+        </div>
+       </div>
+        <div class="footersocial">
+      <h3>Follow Us</h3>
+      <a style="margin-right: 10px;display: inline-block;" href="#">
+         <img style="display:block;" src="facebook.png" alt="Facebook" >
+        </a>
+       <a style="margin-right: 10px;display: inline-block;" href="#" >
+          <img style="display:block;" src="twitter.png" alt="Twitter">
+        </a>
+         <a style="margin-right: 10px;display: inline-block;" href="#" > 
+          <img style="display:block;" src="instagram.png" alt="Instagram"> 
+        </a>
+        </div>
+        </div>
+       
+    <div class="footerpara">
+   <p>&copy; 2025 MY Healthy Lifestyle Hub | All Rights Reserved.</p>
+    </div>
+    
+     
+   </footer>
+  </center> 
+  </body>
+
+</html>
