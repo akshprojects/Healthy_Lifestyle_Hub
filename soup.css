@@ -163,7 +163,7 @@ color: blue;
     height: 200px;
     margin-top: -23px;
     object-fit: cover;
-    margin-left:-23px;
+    margin-left:-20px;
   }
   .card p{
    font-size: 15px;
@@ -176,4 +176,5 @@ color: blue;
   .bexplore p{
    font-size: 10px;
   }
+
 }
