@@ -151,7 +151,7 @@ color: blue;
     height: 200px;
     margin-top: -45px;
     object-fit: cover;
-    margin-left:-30px;
+    margin-left:-25px;
     transition: transform 0.3 ease;
   }
   
@@ -160,4 +160,5 @@ color: blue;
     font-size: 1rem;
     padding: 10px;
   }
+
 }
